@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="js/script.js"></script>
+  	<style type="text/css">
+  		.ct img{
+  			width: 80px;
+  			float: left;
+  		}
+  		.ct h3{
+  			font-size: 17px;
+  			float: left;
+  			margin-top: 0;
+  		}
+  		.ct p{
+  			float: left;
+  		}
+  		.ct .goiY{
+  			margin-top: 10px
+  		}
+  		.ct .col-sm-6.col-xs-6{
+  			padding-bottom: 15px;
+  		}
+  		.banner select,.banner input {
+  			border:none;
+  			outline: none;
+  		}
+  		#right table tr td{
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+
+		.Information img{
+  			width: 80px;
+  			float: left;
+  		}
+  		.Information h3{
+  			font-size: 17px;
+  			float: left;
+  			margin-top: 0;
+  		}
+  		.Information p{
+  			float: left;
+  		}
+  		.Information .goiY{
+  			margin-top: 10px
+  		}
+  		.Information .col-sm-6.col-xs-6{
+  			padding-bottom: 15px;
+  		}
+  		#tt a{
+  			width: 50px;
+  			padding : 14px;
+  			margin : 10px;
+  		}
+  		.Information .col-sm-6.col-xs-6:hover{
+  			background-color: #e3edf7;
+  		}
+  		#right a{
+  			text-decoration: none;
+  		}
+  		.row .col-sm-6,.row .col-sm-12{
+			overflow: hidden;
+		}
+		.col-sm-6 .tg-themetag .hot {
+    		background: #ff2929;
+		}
+		.col-sm-6 .tg-themetag {
+		    background: #ff2929;
+		    right: -20px;
+		    left: initial;
+		    top: 12px;
+		    width: 90px;
+		    text-align: center;
+		    transform: rotate(45deg);
+		    -webkit-transform: rotate(45deg);
+		    -moz-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		    -o-transform: rotate(45deg);
+		    font-size: 9px;
+		}
+		.tg-themetag {
+		    top: 7px;
+		    left: -5px;
+		    z-index: 2;
+		    color: #fff;
+		    font-size: 10px;
+		    font-weight: 500;
+		    line-height: 10px;
+		    position: absolute;
+		    background: #ff526c;
+		    padding: 5px 3px 3px 10px;
+		    text-transform: uppercase;
+		}
+
+  	</style>
+</head>
+<body>
+	<div id="menu-top">
+		<nav class="navbar" style="background: #00c5f8;">
+		  <div class="container">
+		    <div class="navbar-header">
+		    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu" id="button1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+    			</button>
+		      <a href="index.html"><img src="image/logo.png" width="120px;" height="50px;"></a>
+		    </div>
+			<div class="collapse navbar-collapse" id="main-menu">
+				<ul class="nav navbar-nav navbar-right" id="menu">
+			      	<li><a href="index.html">Trang Chủ</a></li>
+			      	<li><a href="tracuuluong.html">Tra cứu lương</a></li>
+			      	<li id="dropdown1">
+			      		<a class="dropdown" data-toggle="dropdown" href="#">Việc làm<span class="caret"></span></a>
+			      		<ul class="dropdown-menu" id="dropdown-menu">
+			      			<li><a href="vieclamQL.html">Việc làm quản lý</a></li>
+			      			<li><a href="vieclamQL.html">Việc làm chuyên môn</a></li>
+			      			<li><a href="vieclamQL.html">Việc làm lao động phổ thông</a></li>
+			      		</ul>
+			      	</li>
+			      	<li><a href="NhaTuyenDung.html">Nhà tuyển dụng</a></li>
+			      	<li style="background-color: #459de6;">
+			      		<a href="Login.html"><span style="font-size: 130%"><i class="fas fa-user"></i></span> Hồ sơ của tôi</a>
+			      	</li>
+			    </ul>
+			</div>
+		  </div>
+		</nav>
+	</div>
+	<div class="banner" style="margin-top: -20px;">
+		<div>
+			<img src="image/w.jpg" width="100%" height="150px" id="bn">
+		</div>
+		<div class="container" id="bn" style="margin-top: 50px;margin-left: 95px;min-height: 80px;padding: 15px 10px 5px;background: #00000069;">
+			<center><div class="row">
+				<form action="laptrinhweb.html">
+					<div class="col-sm-4">
+						<input type="text" name="key" placeholder="Nhập từ khóa" style="width: 100%;height: 45px;">
+					</div>
+					<div class="col-sm-3" class="select1">
+						<select style="height: 45px;width: 100%;">
+							<option value="1">Chọn vị trí chức vụ</option>
+							<option value="2">Thực tập sinh đào tạo</option>
+							<option value="3">Chuyên viên đào tạo</option>
+							<option value="4">Giám đốc đào tạo</option>
+							<option value="4">Lập trình viên</option>
+						</select>
+					</div>
+					<div class="col-sm-3">
+						<select style="height: 45px; width: 100%;">
+							<option>Hà Nội</option>
+							<option>Hồ Chí Minh</option>	
+							<option>Đà Nẵng</option>
+						</select>
+					</div>
+					<div class="col-sm-2">
+						<button type="submit" class="btn btn-warning" style="height: 45px;width: 100%;">Tra cứu lương</button>
+					</div>
+				</form>
+			</div></center>
+		</div>
+	</div>
+	<div class="container">
+		<p style="color: black; margin-top: 170px">SJob / Việc làm / Việc làm quản lý</p>
+	</div>
+	<div class="Information">
+		<div class="container">
+			<div id="left">
+				<p style="background-color: #f1f6fb;width: 100%;padding: 9px;text-align: right;"><strong style="position: absolute;left: 9%;">TUYỂN DỤNG 14843 VIỆC LÀM TRONG THÁNG 06/2020</strong> Việc 1 - 20 Trong 14843</p>
+				<div class="row">
+					<div class="col-sm-6 col-xs-6">
+						<div class="goiY">
+							<img src="image/goiy/3.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6">
+						<div class="goiY">
+							<img src="image/goiy/1.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6">
+						<div class="goiY">
+							<img src="image/goiy/2.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6">
+						<div class="goiY">
+							<img src="image/goiy/4.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6">
+						<div class="goiY">
+							<img src="image/goiy/5.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6">
+						<div class="goiY">
+							<img src="image/goiy/7.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6">
+						<div class="goiY">
+							<img src="image/goiy/8.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6">
+						<div class="goiY">
+							<img src="image/goiy/6.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6">
+						<div class="goiY">
+							<img src="image/goiy/2.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;</i></p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6">
+						<div class="goiY">
+							<img src="image/goiy/4.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6">
+						<div class="goiY">
+							<img src="image/goiy/1.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-6">
+						<div class="goiY">
+							<img src="image/goiy/5.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+						</div>
+					</div>
+				</div>
+				<center><nav aria-label="Page navigation example">
+				  	<ul class="pagination" id="tt">
+					    <li class="page-item">
+					      	<a class="page-link" href="#" aria-label="Previous">
+						        <span aria-hidden="true">&laquo;</span>
+						        <span class="sr-only">Previous</span>
+					      	</a>
+					    </li>
+					    <li class="page-item"><a class="page-link" href="#">1</a></li>
+					    <li class="page-item"><a class="page-link" href="#">2</a></li>
+					    <li class="page-item"><a class="page-link" href="#">3</a></li>
+					    <li class="page-item"><a class="page-link" href="#">4</a></li>
+					    <li class="page-item"><a class="page-link" href="#">5</a></li>
+					    <li class="page-item"><a class="page-link" href="#">6</a></li>
+					    <li class="page-item"><a class="page-link" href="#">7</a></li>
+					    <li class="page-item">
+					      	<a class="page-link" href="#" aria-label="Next">
+						        <span aria-hidden="true">&raquo;</span>
+						        <span class="sr-only">Next</span>
+					      	</a>
+					    </li>
+				  	</ul>
+				</nav></center>
+			</div>
+			<div id="right">
+				<table class="table table-hover" style="margin-left: 20px">
+					<thead>
+						<tr style="background-color: #f1f6fb;">
+							<th>LỌC THEO THỜI GIAN</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="#">24 giờ qua</a></td>
+							<td align="right"><a href="#">758</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">7 ngày qua</a></td>
+							<td align="right"><a href="#">3907</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">14 ngày qua</a></td>
+							<td align="right"><a href="#">7787</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">30 ngày qua</a></td>
+							<td align="right"><a href="#">15226</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-hover" style="margin-left: 20px">
+					<thead>
+						<tr style="background-color: #f1f6fb;">
+							<th>LỌC THEO LOẠI HÌNH</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="#">Toàn thời gian</a></td>
+							<td align="right"><a href="#">15211</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">Bán thời gian</a></td>
+							<td align="right"><a href="#">381</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">Làm theo giờ</a></td>
+							<td align="right"><a href="#">143</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">Thực tập sinh</a></td>
+							<td align="right"><a href="#">72</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-hover" style="margin-left: 20px">
+					<thead>
+						<tr style="background-color: #f1f6fb;">
+							<th>LỌC THEO THỜI GIAN</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="#">24 giờ qua</a></td>
+							<td align="right"><a href="#">758</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">7 ngày qua</a></td>
+							<td align="right"><a href="#">3907</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">14 ngày qua</a></td>
+							<td align="right"><a href="#">7787</a></td>
+						</tr>
+						<tr>
+							<td><a href="#">30 ngày qua</a></td>
+							<td align="right"><a href="#">15226</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="ct">
+		<div class="container">
+			<div class="list-group">
+				<li class="list-group-item list-group-item-warning"><h4><strong>GỢI Ý VIỆC LÀM</strong></h4></li>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-xs-6">
+					<div class="col-sm-12" style="border: 1px solid;">
+						<div class="goiY">
+							<img src="image/goiy/1.jpg">
+							<h3><strong>Nhân Viên Kinh Doanh (Sơn Nước/ Nhôm Kính)</strong></h3>
+							<p><i>Công Ty TNHH Xây Dựng Và Thương Mại Nguyễn Thành</i></p>
+							<p>Hà Nội  10/06/2020  10 - 15 triệu VNĐ</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<div class="col-sm-12" style="border: 1px solid;">
+						<div class="goiY">
+							<img src="image/goiy/2.jpg">
+							<h3><strong>Trưởng Phòng Chăm Sóc Khách Hàng</strong></h3>
+							<p><i>Công Ty TNHH Một Thành Viên Truyền Thông Số Quốc Tế IDM</i></p>
+							<p> Hồ Chí Minh  07/06/2020  Thỏa thuận</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<div class="col-sm-12" style="border: 1px solid;">
+						<div class="goiY">
+							<img src="image/goiy/3.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<div class="col-sm-12" style="border: 1px solid;">
+						<div class="goiY">
+							<img src="image/goiy/6.jpg">
+							<h3><strong>[HCM] Nhân Viên Truyền Hình Vtvcab</strong></h3>
+							<p><i>Công Ty Cổ Phần Bellsystem 24-Hoa Sao Chi Nhánh Hồ Chí Minh</i></p>
+							<p> Hồ Chí Minh  17/06/2020  Thỏa thuận</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<div class="col-sm-12" style="border: 1px solid;">
+						<div class="goiY">
+							<img src="image/goiy/5.jpg">
+							<h3><strong>[HCM] Nhân Viên Truyền Hình Vtvcab</strong></h3>
+							<p><i>Công Ty Cổ Phần Bellsystem 24-Hoa Sao Chi Nhánh Hồ Chí Minh</i></p>
+							<p> Hồ Chí Minh  17/06/2020  Thỏa thuận</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<div class="col-sm-12" style="border: 1px solid;">
+						<div class="goiY">
+							<img src="image/goiy/4.jpg">
+							<h3><strong>Nhân Viên Telesales Tập Đoàn Viettel TP HCM &ensp;</strong></h3>
+							<p><i>Công ty TNHH Savills (Việt Nam) &ensp;&ensp;&ensp;&ensp;</i></p>
+							<p> Hồ Chí Minh  14/06/2020  5 - 7 triệu VNĐ</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" style="background-color: #00c5f8; color: black; margin-top: 20px" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="image/logo.png" style="width: 100px"><br>
+					<h4>Thông Tin</h4>
+					<ul class="list-unstyled">
+						<li><a href="#">Giới thiệu về YaMe.vn</a></li>
+						<li><a href="#">Tuyển dụng</a></li>
+						<li>.</li>
+						<li><a href="#">Quy chế hoạt động</a></li>
+						<li><a href="#">Điều khoản mua bán</a></li>
+						<li>.</li>
+						<li><a href="#" class="boxed-content-title">Mã Voucher giảm giá</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="left-aligned">
+	                    <div class="left-aligned">
+	                        <br>
+	                        <p style="margin-bottom: 0;">Đặt hàng và thu tiền tận nơi toàn quốc</p>
+	                        <h5 class="boxed-content-title">(028) 7307 1441</h5>
+	                    </div>
+	                    <br>
+	                    <h5>CSKH</h5>
+	                    <p style="margin-bottom: 0;">
+	                        <a href="#">Than phiền/Chăm sóc khách hàng</a>
+	                    </p>
+                	</div><br>
+                	<h4>FAQ</h4>
+					<ul class="list-unstyled">
+	                    <li><a href="#">Vận chuyển</a></li>
+	                    <li><a href="#">Chính sách đổi trả</a></li>
+	                    <li><a href="#">Chính sách bảo hành</a></li>
+	                    <li><a href="#">Khách hàng VIP</a></li>
+	                    <li><a href="#">Đối tác cung cấp</a></li>
+                	</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-12">
+	                        <br>
+	                        <p>Hệ thống cửa hàng YaMe.vn</p>
+                    	</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-10  col-xs-12">
+			        <hr style="margin: 10px 0;">
+			        <p style="margin-bottom: 0;">© 2020 - CÔNG TY TNHH YAME VN</p>
+			        <p style="margin-bottom: 0; font-size: 9px;">Giấy CNĐKDN: 0310874914 – Ngày cấp: 25/11/2011 - Cơ quan cấp: Phòng Đăng Ký Kinh Doanh – Sở Kế Hoạch và Đầu Tư TP.HCM</p>
+			        <p style="margin-bottom: 0; font-size: 9px;">Địa chỉ đăng ký kinh doanh: 766/3B-3C Sư Vạn Hạnh (Nối dài), Phường 12, Quận 10, TP.HCM - Điện thoại: 028 3868 4857 - Email: cskh@yame.vn</p>
+			    </div>
+			    <div class="col-sm-2 col-xs-12">
+			        <a href="#" target="_blank">
+			            <img src="image/dathongbao.png" alt="" style="width: 100%; max-width:200px; margin-top:10px;">
+			        </a>
+			    </div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

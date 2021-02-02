@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="css/style_ntd.css">
+	<style type="text/css">
+		#title {
+			margin-top: 25px;
+		}
+		#title #sort{
+			cursor: pointer;
+			text-align: center;
+		}
+		#title #sort:hover{
+			background: #E6E6FA;
+		}
+		#title #sort1{
+			cursor: pointer;
+			text-align: center;
+			display: none;
+		}
+		#title #sort1:hover{
+			background: #E6E6FA;
+		}
+		.pagination li{
+			padding: 0px 5px 0px 5px; 
+		}
+		.pagination li a{
+			color: black;
+		}
+		#tb1{
+			display: block;
+		}
+		#tb1{
+			display: none;
+		}
+
+
+	</style>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['4 năm trở lên',      1.4],
+          ['3 năm', 4],
+          ['2 năm',     11],
+          ['1 năm',    7]
+        ]);
+
+        var options = {
+          title: 'Biểu đồ kinh nghiệm người đăng ký'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Đăng ký'],
+          ['T1',  1000],
+          ['T2',  1170],
+          ['T3',  660],
+          ['T4',  1230],
+          ['T5',  1130],
+          ['T6',  1030],
+          ['T7',  900],
+          ['T8',  1270],
+          ['T9',  660],
+          ['T10',  930],
+          ['T11',  1230],
+          ['T12',  1030]
+        ]);
+
+        var options = {
+          title: 'Biểu đồ số lượng bài đăng và số lượng đăng ký',
+          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Bài đăng'],
+          ['T1',  5],
+          ['T2',  7],
+          ['T3',  9],
+          ['T4',  2],
+          ['T5',  3],
+          ['T6',  3],
+          ['T7',  7],
+          ['T8',  5],
+          ['T9',  1],
+          ['T10',  2],
+          ['T11',  4],
+          ['T12',  6]
+        ]);
+
+        var options = {
+          title: 'Thống kê số bài đăng',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+		<div class="elfsight-app-cd08d4dd-0176-459d-8e6d-6ff1e25cb942"></div>
+	<!-- <a data-caption="Hồ sơ xin việc của bạn trong mắt nhà tuyển dụng" data-fancybox="" data-type="iframe" title="Hồ sơ xin việc của bạn trong mắt nhà tuyển dụng" class="btn-colorgb-float"> <i class="icon-vcard icon-float"></i> <span>Liên hệ với admin</span><img src="https://jobsgo.vn/img/fb_chat_icon.png" alt="Chat"></a> -->
+	<div class="container">
+		<div class="menu_top">
+			<a href="index.html"><img src="image/logo.png" width="120px;" id="img"></a>
+			<div align="right" class="right">
+				<div class="dropdown">
+				    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+				      <img src="image/goiy/3.jpg" width="40">Công ty
+				    </button>
+				    <div class="dropdown-menu">
+				      	<a class="dropdown-item" href="#"><i class="fas fa-eye"></i> Xem cv</a>
+				      	<a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Đổi mật khẩu</a>
+				      	<div class="dropdown-divider"></div>
+				      	<a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="container">
+				<div class="main_left">
+					<div class="left_top">
+						<center><div>
+							<center class="dd">
+								<img src="image/daidien.jpg" style="margin-top: 30px;border: 5px solid white;display: block;width: 180px;" id="hv">
+								<div class="overlay">
+									<div class="text"><i class="fas fa-plus" style="color: #7FFF00;font-size: 40px;"></i></div>
+								</div>
+							</center>
+							<div class="lk">
+								<center>
+									<span><i class="fab fa-facebook-f"></i></span>
+									<span><i class="fab fa-google-plus-g"></i></span>
+									<span><i class="fab fa-twitter"></i></span>
+									<span><i class="fab fa-linkedin-in"></i></span>
+									<span><i class="fab fa-skype"></i></span>
+								</center>
+							</div>
+						</div></center>
+					</div>
+					<div class="left_bot">
+						<p style="opacity: 0.7;text-indent: 14px;">cá nhân</p>
+						<ul>
+							<a href="hs_NTD_dd.html"><li><i class="fas fa-user-plus"></i>Duyệt danh sách</li></a>
+							<a href="hs_NTD.html"><li><i class="fas fa-paste"></i>Đăng bài viết</li></a>
+							<a href="chart.html"><li><i class="fas fa-chart-bar"></i>Thống kê</li></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="main_right">
+					<div id="piechart" style="width: 100%; height: 500px;border-bottom: 1px solid red;"></div>
+					<div style="position: absolute;top: 55%;right: 17%;">
+						<table class="table">
+						    <thead>
+						      <tr>
+						        <th>Kinh nghiệm</th>
+						        <th>Đã duyệt</th>
+						      </tr>
+						    </thead>
+						    <tbody>
+						      <tr>
+						        <td>1 năm</td>
+						        <td>203/620</td>
+						      </tr>
+						      <tr>
+						        <td>2 năm</td>
+						        <td>356/560</td>
+						      </tr>
+						      <tr>
+						        <td>3 năm</td>
+						        <td>190/230</td>
+						      </tr>
+						      <tr>
+						        <td>4 năm</td>
+						        <td>70/85</td>
+						      </tr>
+						    </tbody>
+						  </table>
+					</div>
+					<div id="chart_div" style="width: 100%; height: 300px;border-bottom: 1px solid red;"></div>
+					<div id="curve_chart" style="width: 100%; height: 300px;padding-bottom: 50px;"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="js/script.js"></script>
+  	<script src="js/lg.js"></script>
+	<style type="text/css">
+		body{
+			    background: #005689;
+		}
+		.container{
+			margin-top: 50px;
+			background: white;
+			height: 600px;
+		}
+		.process{
+		    width: 100%;
+		    margin: 0 auto;
+		    display: block;
+		    padding: 10px 0px;
+		    padding-bottom: 35px;
+		    position: absolute;
+		    left: 12%;
+		}
+		.process ul {
+		    width: 100%;
+		    display: flex;
+		}
+		.process ul li {
+		    flex-grow: 1;
+		    max-width: 25%;
+		    text-align: center;
+		    position: relative;
+		}
+		li {
+		    list-style: none;
+		}
+		.process ul li:first-child a {
+		    background: #e33551;
+		}
+		.process ul li a {
+		    color: white;
+		    font-weight: bold;
+		    text-align: center;
+		    height: 25px;
+		    width: 25px;
+		    line-height: 25px;
+		    border-radius: 50%;
+		    background: #acacac;
+		    display: inline-block;
+		    position: relative;
+		}
+		a {
+		    text-decoration: none;
+		}
+		.process ul li p {
+		    width: 90%;
+		    height: 5px;
+		    background: #efefef;
+		    position: absolute;
+		    top: 6%	;
+		    left: 55%;
+		}
+		.row{
+			margin-top: 70px;
+		}
+		label{
+			color: #0277bd;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+		<div class="elfsight-app-cd08d4dd-0176-459d-8e6d-6ff1e25cb942"></div>
+	<div class="container">
+		<p style="margin-top: 5px;" align="right">Lưu ý các trường hợp có (<span style="color: red;">*</span>) là bắt buộc</p>
+		<hr>
+		<div class="process">
+	                <ul>
+	                    <li><a href="javascript:void(0)" style="background: rgb(227, 53, 81);">1
+	                        <span style="font-weight: bold;">Đăng nhập</span>
+	                        </a><p style="background: rgb(227, 53, 81);"></p></li>
+	                    <li><a id="bgr1" href="javascript:void(0)" style="background:#acacac">2
+	                        <span style="font-weight:300">Thông tin đặt hàng</span>
+	                        </a><p id="bgr" style="background:#efefef"></p></li>
+	                        <li><a href="javascript:void(0)" style="background:#acacac">3
+	                         <span style="font-weight:300">Thanh toán</span>
+	                     </a></li>
+	                                                                      
+	                  </ul>
+	    </div>
+	    <div class="row" id="hs1">
+	    	<div class="col-sm-12" align="center">
+	    		<h2>Hồ sơ xin việc</h2>
+	    	</div>
+	    	<div class="col-sm-3">
+	    		
+	    	</div>
+	    	<div class="col-sm-6">
+			    <form action="index.html">
+			    	<div class="col-sm-6">
+			    		<h5><strong>KINH NGHIỆM LÀM VIỆC</strong></h5>
+			    	</div>
+			    	<div class="col-sm-6">
+			    		<h6 align="right" class="qtht">quá trình học tập <i class="fas fa-exchange-alt"></i><h6>
+			    	</div>
+			    	<div class="col-sm-12">
+			    		<hr style="margin-top: 0px">
+			    	</div>
+			    	<div class="col-sm-6">
+			    		<div class="form-group">
+						  <label for="usr">Tên công ty <span style="color: red;">*</span></label>
+						  <input type="text" class="form-control" id="usr">
+						</div>
+			    	</div>
+			    	<div class="col-sm-6">
+			    		<div class="form-group">
+						  <label for="usr">Chức danh <span style="color: red;">*</span></label>
+						  <input type="text" class="form-control" id="usr">
+						</div>
+			    	</div>
+			    	<div class="col-sm-6">
+			    		<div class="form-group">
+					      <label for="sel1">Năm bắt đầu <span style="color: red;">*</span></label>
+					      <select class="form-control" id="sel1">
+					        <option value="">Chọn...</option>
+							<option value="1">Trung cấp - Nghề</option>
+							<option value="2">Cao Đẳng</option>
+							<option value="3">Đại Học</option>
+							<option value="4">Thạc sỹ</option>
+							<option value="5">Tiến sỹ</option>
+							<option value="6">Chứng chỉ chuyên ngành</option>
+							<option value="7">Trung học phổ thông</option>
+					      </select>
+					    </div>
+			    	</div>
+			    	<div class="col-sm-6">
+			    		<div class="form-group">
+					      <label for="sel1">Năm kết thúc:</label>
+					      <select class="form-control" id="sel1">
+					        <option value="2020">Năm 2020</option>
+							<option value="2019">Năm 2019</option>
+							<option value="2018">Năm 2018</option>
+							<option value="2017">Năm 2017</option>
+							<option value="2016">Năm 2016</option>
+							<option value="2015">Năm 2015</option>
+							<option value="2014">Năm 2014</option>
+							<option value="2013">Năm 2013</option>
+							<option value="2012">Năm 2012</option>
+							<option value="2011">Năm 2011</option>
+							<option value="2010">Năm 2010</option>
+							<option value="2009">Năm 2009</option>
+							<option value="2008">Năm 2008</option>
+							<option value="2007">Năm 2007</option>
+							<option value="2006">Năm 2006</option>
+							<option value="2005">Năm 2005</option>
+							<option value="2004">Năm 2004</option>
+							<option value="2003">Năm 2003</option>
+							<option value="2002">Năm 2002</option>
+							<option value="2001">Năm 2001</option>
+							<option value="2000">Năm 2000</option>
+							<option value="1999">Năm 1999</option>
+							<option value="1998">Năm 1998</option>
+							<option value="1997">Năm 1997</option>
+							<option value="1996">Năm 1996</option>
+							<option value="1995">Năm 1995</option>
+							<option value="1994">Năm 1994</option>
+							<option value="1993">Năm 1993</option>
+							<option value="1992">Năm 1992</option>
+							<option value="1991">Năm 1991</option>
+							<option value="1990">Năm 1990</option>
+							<option value="1989">Năm 1989</option>
+							<option value="1988">Năm 1988</option>
+							<option value="1987">Năm 1987</option>
+							<option value="1986">Năm 1986</option>
+							<option value="1985">Năm 1985</option>
+							<option value="1984">Năm 1984</option>
+							<option value="1983">Năm 1983</option>
+							<option value="1982">Năm 1982</option>
+							<option value="1981">Năm 1981</option>
+							<option value="1980">Năm 1980</option>
+							<option value="1979">Năm 1979</option>
+							<option value="1978">Năm 1978</option>
+							<option value="1977">Năm 1977</option>
+							<option value="1976">Năm 1976</option>
+							<option value="1975">Năm 1975</option>
+							<option value="1974">Năm 1974</option>
+							<option value="1973">Năm 1973</option>
+							<option value="1972">Năm 1972</option>
+							<option value="1971">Năm 1971</option>
+							<option value="1970">Năm 1970</option>
+					      </select>
+					    </div>
+			    	</div>
+			    	<div class="col-sm-12">
+			    		<div class="form-group">
+						  <label for="comment">Mô tả công việc <span style="color: red;">*</span></label>
+						  <textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+			    	</div>
+			    	<div class="col-sm-12" align="center">
+			    		<button type="submit" class="btn btn-success">Nộp đơn ứng tuyển</button>
+			    	</div>
+			    </form>
+	    	</div>
+	    	<div class="col-sm-3">
+	    		
+	    	</div>
+	    </div>
+	    <div class="row" id="hs2" style="display: none;">
+	    	<div class="col-sm-12" align="center">
+	    		<h2>Hồ sơ xin việc</h2>
+	    	</div>
+	    	<div class="col-sm-3">
+	    		
+	    	</div>
+	    	<div class="col-sm-6">
+			    <form action="index.html">
+			    	<div class="col-sm-6">
+			    		<h5><strong>QUÁ TRÌNH HỌC TẬP</strong></h5>
+			    	</div>
+			    	<div class="col-sm-6">
+			    		<h6 align="right" class="knlv">kinh nghiệm làm việc <i class="fas fa-exchange-alt"></i><h6>
+			    	</div>
+			    	<div class="col-sm-12">
+			    		<hr style="margin-top: 0px">
+			    	</div>
+			    	<div class="col-sm-6">
+			    		<div class="form-group">
+						  <label for="usr">Trường học <span style="color: red;">*</span></label>
+						  <input type="text" class="form-control" id="usr">
+						</div>
+			    	</div>
+			    	<div class="col-sm-6">
+			    		<div class="form-group">
+						  <label for="usr">Chuyên ngành <span style="color: red;">*</span></label>
+						  <input type="text" class="form-control" id="usr">
+						</div>
+			    	</div>
+			    	<div class="col-sm-6">
+			    		<div class="form-group">
+					      <label for="sel1">Bằng cấp <span style="color: red;">*</span></label>
+					      <select class="form-control" id="sel1">
+					        <option value="2020">Năm 2020</option>
+							<option value="2019">Năm 2019</option>
+							<option value="2018">Năm 2018</option>
+							<option value="2017">Năm 2017</option>
+							<option value="2016">Năm 2016</option>
+							<option value="2015">Năm 2015</option>
+							<option value="2014">Năm 2014</option>
+							<option value="2013">Năm 2013</option>
+							<option value="2012">Năm 2012</option>
+							<option value="2011">Năm 2011</option>
+							<option value="2010">Năm 2010</option>
+							<option value="2009">Năm 2009</option>
+							<option value="2008">Năm 2008</option>
+							<option value="2007">Năm 2007</option>
+							<option value="2006">Năm 2006</option>
+							<option value="2005">Năm 2005</option>
+							<option value="2004">Năm 2004</option>
+							<option value="2003">Năm 2003</option>
+							<option value="2002">Năm 2002</option>
+							<option value="2001">Năm 2001</option>
+							<option value="2000">Năm 2000</option>
+							<option value="1999">Năm 1999</option>
+							<option value="1998">Năm 1998</option>
+							<option value="1997">Năm 1997</option>
+							<option value="1996">Năm 1996</option>
+							<option value="1995">Năm 1995</option>
+							<option value="1994">Năm 1994</option>
+							<option value="1993">Năm 1993</option>
+							<option value="1992">Năm 1992</option>
+							<option value="1991">Năm 1991</option>
+							<option value="1990">Năm 1990</option>
+							<option value="1989">Năm 1989</option>
+							<option value="1988">Năm 1988</option>
+							<option value="1987">Năm 1987</option>
+							<option value="1986">Năm 1986</option>
+							<option value="1985">Năm 1985</option>
+							<option value="1984">Năm 1984</option>
+							<option value="1983">Năm 1983</option>
+							<option value="1982">Năm 1982</option>
+							<option value="1981">Năm 1981</option>
+							<option value="1980">Năm 1980</option>
+							<option value="1979">Năm 1979</option>
+							<option value="1978">Năm 1978</option>
+							<option value="1977">Năm 1977</option>
+							<option value="1976">Năm 1976</option>
+							<option value="1975">Năm 1975</option>
+							<option value="1974">Năm 1974</option>
+							<option value="1973">Năm 1973</option>
+							<option value="1972">Năm 1972</option>
+							<option value="1971">Năm 1971</option>
+							<option value="1970">Năm 1970</option>
+					      </select>
+					    </div>
+			    	</div>
+			    	<div class="col-sm-6">
+			    		<div class="form-group">
+					      <label for="sel1">Năm tốt nghiệp :</label>
+					      <select class="form-control" id="sel1">
+					        <option value="2020">Năm 2020</option>
+							<option value="2019">Năm 2019</option>
+							<option value="2018">Năm 2018</option>
+							<option value="2017">Năm 2017</option>
+							<option value="2016">Năm 2016</option>
+							<option value="2015">Năm 2015</option>
+							<option value="2014">Năm 2014</option>
+							<option value="2013">Năm 2013</option>
+							<option value="2012">Năm 2012</option>
+							<option value="2011">Năm 2011</option>
+							<option value="2010">Năm 2010</option>
+							<option value="2009">Năm 2009</option>
+							<option value="2008">Năm 2008</option>
+							<option value="2007">Năm 2007</option>
+							<option value="2006">Năm 2006</option>
+							<option value="2005">Năm 2005</option>
+							<option value="2004">Năm 2004</option>
+							<option value="2003">Năm 2003</option>
+							<option value="2002">Năm 2002</option>
+							<option value="2001">Năm 2001</option>
+							<option value="2000">Năm 2000</option>
+							<option value="1999">Năm 1999</option>
+							<option value="1998">Năm 1998</option>
+							<option value="1997">Năm 1997</option>
+							<option value="1996">Năm 1996</option>
+							<option value="1995">Năm 1995</option>
+							<option value="1994">Năm 1994</option>
+							<option value="1993">Năm 1993</option>
+							<option value="1992">Năm 1992</option>
+							<option value="1991">Năm 1991</option>
+							<option value="1990">Năm 1990</option>
+							<option value="1989">Năm 1989</option>
+							<option value="1988">Năm 1988</option>
+							<option value="1987">Năm 1987</option>
+							<option value="1986">Năm 1986</option>
+							<option value="1985">Năm 1985</option>
+							<option value="1984">Năm 1984</option>
+							<option value="1983">Năm 1983</option>
+							<option value="1982">Năm 1982</option>
+							<option value="1981">Năm 1981</option>
+							<option value="1980">Năm 1980</option>
+							<option value="1979">Năm 1979</option>
+							<option value="1978">Năm 1978</option>
+							<option value="1977">Năm 1977</option>
+							<option value="1976">Năm 1976</option>
+							<option value="1975">Năm 1975</option>
+							<option value="1974">Năm 1974</option>
+							<option value="1973">Năm 1973</option>
+							<option value="1972">Năm 1972</option>
+							<option value="1971">Năm 1971</option>
+							<option value="1970">Năm 1970</option>
+					      </select>
+					    </div>
+			    	</div>
+			    	<div class="col-sm-12">
+			    		<div class="form-group">
+						  <label for="comment">Mô tả quá trình học tập <span style="color: red;">*</span></label>
+						  <textarea class="form-control" rows="5" id="comment"></textarea>
+						</div>
+			    	</div>
+			    	<div class="col-sm-12" align="center">
+			    		<button type="submit" class="btn btn-success">Nộp đơn ứng tuyển</button>
+			    	</div>
+			    </form>
+	    	</div>
+	    	<div class="col-sm-3">
+	    		
+	    	</div>
+	    </div>
+	</div>
+
+</body>
+</html>

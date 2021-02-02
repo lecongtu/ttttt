@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="js/script.js"></script>
+  	<style type="text/css">
+  		.ct img{
+  			width: 80px;
+  			float: left;
+  		}
+  		.ct h3{
+  			font-size: 17px;
+  			float: left;
+  			margin-top: 0;
+  		}
+  		.ct p{
+  			float: left;
+  		}
+  		.ct .goiY{
+  			margin-top: 10px
+  		}
+  		.ct .col-sm-6.col-xs-6{
+  			padding-bottom: 15px;
+  		}
+  		#right table tr td{
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+
+		.Information img{
+  			width: 80px;
+  			float: left;
+  		}
+  		.Information h3{
+  			font-size: 17px;
+  			float: left;
+  			margin-top: 0;
+  		}
+  		.Information p{
+  			float: left;
+  		}
+  		.Information .goiY{
+  			margin-top: 10px
+  		}
+  		.Information .col-sm-6.col-xs-6{
+  			padding-bottom: 15px;
+  		}
+  		#tt a{
+  			width: 50px;
+  			padding : 14px;
+  			margin : 10px;
+  		}
+  		.Information .col-sm-6.col-xs-6:hover{
+  			background-color: #e3edf7;
+  		}
+  		#right a{
+  			text-decoration: none;
+  		}
+  		.banner #bn img{
+  			width: 80px;
+  		}
+  		#load-fbchat {
+		    width: 60px;
+		    height: 60px;
+		    position: fixed;
+		    bottom: 80px;
+		    right: 10px;
+		}
+		#load-tawkto {
+		    width: 60px;
+		    height: 60px;
+		    position: fixed;
+		    bottom: 12px;
+		    right: 10px;
+		    z-index: 9999999;
+		}
+		.Details ul{
+			list-style: none;
+			margin: 9px;
+			padding:0;
+		}
+		.Details ul li{
+		}
+		.row .col-sm-12{
+			overflow: hidden;
+		}
+		.col-sm-12 .tg-themetag .hot {
+    		background: #ff2929;
+		}
+		.col-sm-12 .tg-themetag {
+		    background: #ff2929;
+		    right: -20px;
+		    left: initial;
+		    top: 12px;
+		    width: 90px;
+		    text-align: center;
+		    transform: rotate(45deg);
+		    -webkit-transform: rotate(45deg);
+		    -moz-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		    -o-transform: rotate(45deg);
+		    font-size: 9px;
+		}
+		.tg-themetag {
+		    top: 7px;
+		    left: -5px;
+		    z-index: 2;
+		    color: #fff;
+		    font-size: 10px;
+		    font-weight: 500;
+		    line-height: 10px;
+		    position: absolute;
+		    background: #ff526c;
+		    padding: 5px 3px 3px 10px;
+		    text-transform: uppercase;
+		}
+
+  	</style>
+</head>
+<body>
+	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+		<div class="elfsight-app-cd08d4dd-0176-459d-8e6d-6ff1e25cb942"></div>
+	<!-- <div id="load-fbchat" class=""><img src="https://jobsgo.vn/img/fb_chat_icon.png" alt="Chat"></div>
+	<div id="load-tawkto" class=""><img src="https://jobsgo.vn/img/chat_icon.png"></div> -->
+	<div id="menu-top">
+		<nav class="navbar" style="background: #00c5f8;">
+		  <div class="container">
+		    <div class="navbar-header">
+		    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu" id="button1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+    			</button>
+		      <a href="index.html"><img src="image/logo.png" width="120px;" height="50px;"></a>
+		    </div>
+			<div class="collapse navbar-collapse" id="main-menu">
+				<ul class="nav navbar-nav navbar-right" id="menu">
+			      	<li><a href="index.html">Trang Chủ</a></li>
+			      	<li><a href="tracuuluong.html">Tra cứu lương</a></li>
+			      	<li id="dropdown1">
+			      		<a class="dropdown" data-toggle="dropdown" href="#">Việc làm<span class="caret"></span></a>
+			      		<ul class="dropdown-menu" id="dropdown-menu">
+			      			<li><a href="vieclamQL.html">Việc làm quản lý</a></li>
+			      			<li><a href="vieclamQL.html">Việc làm chuyên môn</a></li>
+			      			<li><a href="vieclamQL.html">Việc làm lao động phổ thông</a></li>
+			      		</ul>
+			      	</li>
+			      	<li><a href="NhaTuyenDung.html">Nhà tuyển dụng</a></li>
+			      	<li style="background-color: #459de6;">
+			      		<a href="Login.html"><span style="font-size: 130%"><i class="fas fa-user"></i></span> Hồ sơ của tôi</a>
+			      	</li>
+			    </ul>
+			</div>
+		  </div>
+		</nav>
+	</div>
+	<div class="banner" style="margin-top: -20px;">
+		<div>
+			<img src="image/w.jpg" width="100%" height="150px" id="bn">
+		</div>
+		<div class="container" id="bn" style="margin-left: 95px;min-height: 80px;padding: 15px 10px 5px;">
+			<center>
+				<img src="image/goiy/3.jpg">
+				<p>Tham gia vào đại gia đình</p>
+				<h4>Công ty TNHH Đầu tư Bách Hợp</h4>
+			</center>
+		</div>
+	</div>
+	<div class="container">
+		<p style="color: black; margin-top: 170px">SJob / Việc làm / Việc làm quản lý</p>
+	</div>
+	<div class="Information">
+		<div class="container">
+			<div id="left">
+				<h3 style="font-size: 30px;"><strong>Lập Trình Website - Lập Trình .NET - Lập Trình Wordpress</strong></h3>
+				<p><i class="far fa-clock"></i> Hết hạn trong <i class="fas fa-dollar-sign"></i> <span style="color: red;font-weight: bold;">3</span> ngày nữa  Mức lương <span style="color:#7FFF00;font-weight: bold;">Đến 21 triệu VNĐ</span></p>
+				<div class="UngTuyen" style="clear: left;">
+					<a href="hs.html"><button type="button" class="btn btn-primary" style="width:  130px;"><i class="far fa-paper-plane"></i> Ứng tuyển ngay</button></a>
+					<a href="#" style="border: 1px solid;padding: 6px 10px 10px 10px;margin-left: 10px;text-decoration: none;"><i class="far fa-heart"></i> Lưu lại</a>
+					<a href="#" style="border: 1px solid;padding: 6px 10px 10px 10px;margin-left: 10px;text-decoration: none;"><i class="far fa-comments"></i> Chat với NTD</a>
+				</div>
+				<div class="Details">
+					<h4><strong>Mô tả công việc</strong></h4>
+					<ul>
+						<li>- Lập trình giao diện và lập trình các modul tính năng của website.</li>
+						<li>- Tham gia xây dựng các giải pháp phát triển nền tảng CMS của công ty</li>
+						<li>- Tham gia nghiên cứu xây dựng các giải pháp, hệ thống.</li>
+						<li>Ghi Chú: Với các sinh viên ngành công nghệ thông tin cty nhận đào tạo thành nghề với yêu cầu duy nhất cam kết làm tối thiểu 6 tháng và yêu lập trình.</li>
+					</ul>
+					<h4><strong>Yêu cầu công việc</strong></h4>
+					<ul>
+						<li>- Tốt nghiệp chuyên ngành CNTT hệ Cao đẳng trở lên hoặc Chứng chỉ Lập trình viên Quốc tế</li>
+						<li>- Trình độ ngoại ngữ: Đọc hiểu tiếng Anh chuyên ngành Công nghệ thông tin</li>
+						<li>- Trình độ chuyên môn: HTML, CSS thành thạo, ASP.NET(C#) và MS-SQL Server</li>
+						<li>- Năng lực cá nhân: Ứng viên cần phải hội tụ các tiêu chí cá nhân sau đây:</li>
+						<li>+ Có ý thức trách nhiệm cao trong công việc.</li>
+						<li>+ Có năng lực và khả năng làm việc độc lập, theo nhóm tốt.</li>
+					</ul>
+					<h4><strong>Quyền lợi được hưởng</strong></h4>
+					<ul>
+						<li>Lương thưởng, tháng lương thứ 13, và các chế độ đãi ngộ khác chi tiết trao đổi khi phỏng vấn</li>
+						<li>- Bảo hiểm xã hội, bảo hiểm y tế</li>
+					</ul>
+					<h4><strong>Địa điểm làm việc</strong></h4>
+					<ul>
+						<li><b>➢</b> 167 Nguyễn Ngọc Nại, Khương Mai, quận Thanh Xuân, Hà Nội</li>
+					</ul>
+					<h4><strong>Ngành nghề</strong></h4>
+					<div>
+						<a href="#" style="border: 1px solid;padding: 5px 10px;">SQL</a>
+						<a href="#" style="border: 1px solid;padding: 5px 10px;">.NET/C#</a>
+					</div>
+					<h4><strong>Yêu cầu về bằng cấp </strong><span style="opacity: 0.7;font-size: 12px;">(tối thiểu)</span></h4>
+					<ul>
+						<li>Cao đẳng</li>
+					</ul>
+					<h4><strong>Yêu cầu kinh nghiệm</strong></h4>
+					<ul>
+						<li>Dưới 5 năm</li>
+					</ul>
+					<h4><strong>Yêu cầu ngôn ngữ</strong></h4>
+					<img src="image/el.png" style="width: 30px;">
+					<p style="margin-top: 5px;margin-left: 5px;">Tiếng Anh</p>
+				</div>
+			</div>
+			<div id="right">
+				<h3><strong>Công ty TNHH Đầu tư Bách Hợp</strong></h3>
+				<p><i class="fas fa-map-marker-alt"></i> Thành phố Thái Bình Thái Bình, Việt Nam</p>
+				<p><i class="fas fa-user"></i> Nhân viên</p>
+				<p>CÔNG TY TNHH THIÊN DIỆP
+				Địa chỉ: SN 65 đường Ngô Thì Nhậm, tổ 30, phường Quang Trung, Thành phố Thái Bình, Thái Bình<br>
+				Mã số thuế: 1000666754<br>
+				Người ĐDPL: Phạm Anh Đức<br>
+				Ngày hoạt động: 24/09/2009<br>
+				Giấy phép kinh doanh: 1000666754</p>
+			</div>
+		</div>
+	</div>
+	<div class="ct">
+		<div class="container">
+			<div class="list-group">
+				<li class="list-group-item list-group-item-warning"><h4><strong>GỢI Ý VIỆC LÀM</strong></h4></li>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-xs-6">
+					<div class="col-sm-12" style="border: 1px solid;">
+						<div class="goiY">
+							<img src="image/goiy/1.jpg">
+							<h3><strong>Nhân Viên Kinh Doanh (Sơn Nước/ Nhôm Kính)</strong></h3>
+							<p><i>Công Ty TNHH Xây Dựng Và Thương Mại Nguyễn Thành</i></p>
+							<p>Hà Nội  10/06/2020  10 - 15 triệu VNĐ</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<div class="col-sm-12" style="border: 1px solid;">
+						<div class="goiY">
+							<img src="image/goiy/2.jpg">
+							<h3><strong>Trưởng Phòng Chăm Sóc Khách Hàng</strong></h3>
+							<p><i>Công Ty TNHH Một Thành Viên Truyền Thông Số Quốc Tế IDM</i></p>
+							<p> Hồ Chí Minh  07/06/2020  Thỏa thuận</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<div class="col-sm-12" style="border: 1px solid;">
+						<div class="goiY">
+							<img src="image/goiy/3.jpg">
+							<h3><strong>Lập Trình Website - Lập Trình .NET</strong></h3>
+							<p><i>Công ty TNHH Đầu tư Bách Hợp &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</i></p>
+							<p>Hà Nội  12/06/2020  Đến 21 triệu VNĐ</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<div class="col-sm-12" style="border: 1px solid;">
+						<div class="goiY">
+							<img src="image/goiy/6.jpg">
+							<h3><strong>[HCM] Nhân Viên Truyền Hình Vtvcab</strong></h3>
+							<p><i>Công Ty Cổ Phần Bellsystem 24-Hoa Sao Chi Nhánh Hồ Chí Minh</i></p>
+							<p> Hồ Chí Minh  17/06/2020  Thỏa thuận</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<div class="col-sm-12" style="border: 1px solid;">
+						<div class="goiY">
+							<img src="image/goiy/5.jpg">
+							<h3><strong>[HCM] Nhân Viên Truyền Hình Vtvcab</strong></h3>
+							<p><i>Công Ty Cổ Phần Bellsystem 24-Hoa Sao Chi Nhánh Hồ Chí Minh</i></p>
+							<p> Hồ Chí Minh  17/06/2020  Thỏa thuận</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<div class="col-sm-12" style="border: 1px solid;">
+						<div class="goiY">
+							<img src="image/goiy/4.jpg">
+							<h3><strong>Nhân Viên Telesales Tập Đoàn Viettel TP HCM &ensp;</strong></h3>
+							<p><i>Công ty TNHH Savills (Việt Nam) &ensp;&ensp;&ensp;&ensp;</i></p>
+							<p> Hồ Chí Minh  14/06/2020  5 - 7 triệu VNĐ</p>
+							<span class="tg-themetag hot">HOT</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" style="background-color: #00c5f8; color: black; margin-top: 20px" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="image/logo.png" style="width: 100px"><br>
+					<h4>Thông Tin</h4>
+					<ul class="list-unstyled">
+						<li><a href="#">Giới thiệu về YaMe.vn</a></li>
+						<li><a href="#">Tuyển dụng</a></li>
+						<li>.</li>
+						<li><a href="#">Quy chế hoạt động</a></li>
+						<li><a href="#">Điều khoản mua bán</a></li>
+						<li>.</li>
+						<li><a href="#" class="boxed-content-title">Mã Voucher giảm giá</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="left-aligned">
+	                    <div class="left-aligned">
+	                        <br>
+	                        <p style="margin-bottom: 0;">Đặt hàng và thu tiền tận nơi toàn quốc</p>
+	                        <h5 class="boxed-content-title">(028) 7307 1441</h5>
+	                    </div>
+	                    <br>
+	                    <h5>CSKH</h5>
+	                    <p style="margin-bottom: 0;">
+	                        <a href="#">Than phiền/Chăm sóc khách hàng</a>
+	                    </p>
+                	</div><br>
+                	<h4>FAQ</h4>
+					<ul class="list-unstyled">
+	                    <li><a href="#">Vận chuyển</a></li>
+	                    <li><a href="#">Chính sách đổi trả</a></li>
+	                    <li><a href="#">Chính sách bảo hành</a></li>
+	                    <li><a href="#">Khách hàng VIP</a></li>
+	                    <li><a href="#">Đối tác cung cấp</a></li>
+                	</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-12">
+	                        <br>
+	                        <p>Hệ thống cửa hàng YaMe.vn</p>
+                    	</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-10  col-xs-12">
+			        <hr style="margin: 10px 0;">
+			        <p style="margin-bottom: 0;">© 2020 - CÔNG TY TNHH YAME VN</p>
+			        <p style="margin-bottom: 0; font-size: 9px;">Giấy CNĐKDN: 0310874914 – Ngày cấp: 25/11/2011 - Cơ quan cấp: Phòng Đăng Ký Kinh Doanh – Sở Kế Hoạch và Đầu Tư TP.HCM</p>
+			        <p style="margin-bottom: 0; font-size: 9px;">Địa chỉ đăng ký kinh doanh: 766/3B-3C Sư Vạn Hạnh (Nối dài), Phường 12, Quận 10, TP.HCM - Điện thoại: 028 3868 4857 - Email: cskh@yame.vn</p>
+			    </div>
+			    <div class="col-sm-2 col-xs-12">
+			        <a href="#" target="_blank">
+			            <img src="image/dathongbao.png" alt="" style="width: 100%; max-width:200px; margin-top:10px;">
+			        </a>
+			    </div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

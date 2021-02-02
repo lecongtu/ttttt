@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="css/style_ntd.css">
+	<script type="text/javascript" language="script">
+		function click1(){
+			document.getElementById('main_right').style.display = 'none';
+			document.getElementById('Payment').style.display = 'block';
+		}
+		function click2(){
+			document.getElementById('main_right').style.display = 'none';
+			document.getElementById('Payment').style.display = 'none';
+			document.getElementById('Complete').style.display = 'block';
+			$('.load').delay(3000).fadeOut('fast');
+		}
+		function bank(element){
+			let tabs = document.getElementsByClassName('col-sm-12');
+			for(i = 0; i < tabs.length ; i++){
+				tabs[i].style.border = "none";
+			}
+			element.style.border = '2px solid red';
+		}
+		
+	</script>
+</head>
+<body>
+	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+		<div class="elfsight-app-cd08d4dd-0176-459d-8e6d-6ff1e25cb942"></div>
+	<!-- <a data-caption="Hồ sơ xin việc của bạn trong mắt nhà tuyển dụng" data-fancybox="" data-type="iframe" title="Hồ sơ xin việc của bạn trong mắt nhà tuyển dụng" class="btn-colorgb-float"> <i class="icon-vcard icon-float"></i> <span>Liên hệ với admin</span><img src="https://jobsgo.vn/img/fb_chat_icon.png" alt="Chat"></a> -->
+	<div class="container">
+		<div class="menu_top">
+			<a href="index.html"><img src="image/logo.png" width="120px;" id="img"></a>
+			<div align="right" class="right">
+				<div class="dropdown">
+				    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+				      <img src="image/goiy/3.jpg" width="40">Công ty
+				    </button>
+				    <div class="dropdown-menu">
+				      	<a class="dropdown-item" href="#"><i class="fas fa-eye"></i> Xem cv</a>
+				      	<a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Đổi mật khẩu</a>
+				      	<div class="dropdown-divider"></div>
+				      	<a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="container">
+				<div class="main_left">
+					<div class="left_top">
+						<center><div>
+							<center class="dd">
+								<img src="image/daidien.jpg" style="margin-top: 30px;border: 5px solid white;display: block;width: 180px;" id="hv">
+								<div class="overlay">
+									<div class="text"><i class="fas fa-plus" style="color: #7FFF00;font-size: 40px;"></i></div>
+								</div>
+							</center>
+							<div class="lk">
+								<center>
+									<span><i class="fab fa-facebook-f"></i></span>
+									<span><i class="fab fa-google-plus-g"></i></span>
+									<span><i class="fab fa-twitter"></i></span>
+									<span><i class="fab fa-linkedin-in"></i></span>
+									<span><i class="fab fa-skype"></i></span>
+								</center>
+							</div>
+						</div></center>
+					</div>
+					<div class="left_bot">
+						<p style="opacity: 0.7;text-indent: 14px;">cá nhân</p>
+						<ul>
+							<a href="hs_NTD_dd.html"><li><i class="fas fa-user-plus"></i>Duyệt danh sách</li></a>
+							<a href="hs_NTD.html"><li><i class="fas fa-paste"></i>Đăng bài viết</li></a>
+							<a href="chart.html"><li><i class="fas fa-chart-bar"></i>Thống kê</li></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="main_right" id="main_right">
+						<div class="row">
+							<div class="col-sm-6 col-xs-6">
+								<div class="col-sm-12">
+									<p>Đăng bài tuyển người làm</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="col-sm-12" align="right">
+									<p>Lưu ý: các trường có dấu (<span style="color: red;">*</span>) là bắt buộc</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="col-sm-12">
+									<div class="form-group">
+								 	 	<label for="usr">Tiêu đề <span style="color: red;">*</span>:</label>
+								  		<input type="text" class="form-control" id="usr" required>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="col-sm-12">
+									<div class="form-group">
+								 	 	<label for="usr">Địa chỉ việc làm <span style="color: red;">*</span>:</label>
+								  		<input type="text" class="form-control" id="usr" required>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-sm-6">
+								<div class="col-sm-12">
+									<div class="form-group">
+	  									<label for="comment">Mô tả:</label>
+	  									<textarea class="form-control" rows="5" id="comment"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="col-sm-12">
+									<div class="form-group">
+	  									<label for="comment">Yêu cầu công việc <span style="color: red;">*</span>:</label>
+	  									<textarea class="form-control" rows="5" id="comment" required></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="col-sm-12">
+									<div class="form-group">
+									  <label for="sel1">Bằng cấp:</label>
+									  <select class="form-control" id="sel1">
+									    <option>Cao đẳng</option>
+									    <option>Đại học</option>
+									    <option>Trên đại học</option>
+									    <option>Không</option>
+									  </select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="col-sm-12">
+									<div class="form-group">
+									  <label for="sel1">Ngôn ngữ:</label>
+									  <select class="form-control" id="sel1">
+									    <option>Tiếng Anh</option>
+									    <option>Tiếng Nhật</option>
+									    <option>Tiếng Đức</option>
+									    <option>Không</option>
+									  </select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="col-sm-12">
+									<div class="form-group">
+									  <label for="sel1">Ngành nghề <span style="color: red;">*</span>:</label>
+									  <select class="form-control" id="sel1">
+									    <option>Lập trình web</option>
+									    <option>Lập trình java</option>
+									    <option>Lập trình frontend</option>
+									    <option>Lập trình backend</option>
+									  </select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="col-sm-12">
+									<div class="form-group">
+									  <label for="sel1">Loại việc làm <span style="color: red;">*</span>:</label>
+									  <select class="form-control" id="sel1">
+									    <option>Việc làm quản lý</option>
+									    <option>Việc làm chuyên môn</option>
+									    <option>Việc làm lao động phổ thông</option>
+									    <option>Việc làm bán thời gian</option>
+									  </select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="col-sm-12">
+									<div class="form-group">
+									  <label for="sel1">Số lượng nhân viên cần tuyển <span style="color: red;">*</span>:</label>
+									  <select class="form-control" id="sel1">
+									    <option><50 người</option>
+									    <option>>50 người</option>
+									    <option>>100 người</option>
+									    <option>>200 người</option>
+									  </select>
+									</div>
+								</div>
+							</div>
+
+
+
+							<!-- <div class="col-sm-5 col-xs-5" align="right">
+								<strong style="color: blue">Tiêu đề</strong> <span style="color: red;">*</span>
+							</div>
+							<div class="col-sm-7 col-xs-7">
+								<input type="text" style="width: 300px;height: 40px;" required>
+							</div>
+							<div class="col-sm-5 col-xs-5" align="right">
+								<strong style="color: blue">Mô tả</strong> <span style="color: red;">*</span>
+							</div>
+							<div class="col-sm-7 col-xs-7">
+								<textarea style="width: 300px;height: 95px" required></textarea>
+							</div>
+							<div class="col-sm-5 col-xs-5" align="right">
+								<strong style="color: blue">Yêu cầu công việc</strong> <span style="color: red;">*</span>
+							</div>
+							<div class="col-sm-7 col-xs-7">
+								<textarea style="width: 300px;height: 95px" required></textarea>
+							</div>
+							<div class="col-sm-5 col-xs-5" align="right">
+								<strong style="color: blue">Địa điểm làm việc</strong>
+							</div>
+							<div class="col-sm-7 col-xs-7">
+								<input type="text" style="width: 300px;height: 40px;" required>
+							</div>
+							<div class="col-sm-5 col-xs-5" align="right">
+								<strong style="color: blue">Yêu cầu bằng cấp & Ngôn ngữ</strong>
+							</div>
+							<div class="col-sm-7 col-xs-7">
+								<select>
+									<option>Cao đẳng</option>
+									<option>Đại học</option>
+									<option>Thoạt Sĩ</option>
+								</select>
+								<select>
+									<option>Không</option>
+									<option>Tiếng Anh</option>
+									<option>Tiếng Nhật</option>
+									<option>Tiếng Đức</option>
+									<option>Khác</option>
+								</select>
+							</div>
+							<div class="col-sm-5 col-xs-5" align="right">
+								<strong style="color: blue">Ngành nghề</strong>
+							</div>
+							<div class="col-sm-7 col-xs-7">
+								<select>
+									<option>Lập trình web</option>
+									<option>Lập trình backend</option>
+									<option>Lập trình frontend</option>
+									<option>Digital marketing</option>
+									<option>Lập trình .NET</option>
+								</select>
+							</div>
+							<div class="col-sm-5 col-xs-5" align="right">
+								<strong style="color: blue">Loại việc làm</strong>
+							</div>
+							<div class="col-sm-7 col-xs-7">
+								<select>
+									<option>Việc làm quản lý</option>
+									<option>Việc làm chuyên môn</option>
+									<option>Việc làm lao động phổ thông</option>
+									<option>Việc làm bán thời gian</option>
+								</select>
+							</div> -->
+							<div class="col-sm-12 col-xs-12">
+								<div class="col-sm-12" align="right">
+									<button type="button" class="btn btn-primary" onclick="click1()"><i class="fas fa-file-upload"></i> <span>ĐĂNG BÀI VIẾT</span></button>
+								</div>
+							</div>
+						</div>
+				</div>
+				<div class="Payment" id="Payment" style="display: none;">
+					<div class="container">
+						<p style="color: blue;font-size: 20px;margin-top: 20px;"><strong>Chọn ngân hàng thanh toán</strong></p>
+						<div class="row">
+							<div class="col-sm-4 col-xs-4">
+								<div class="col-sm-12" onclick="bank(this)">
+									<img src="image/bank/agribank.png" width="100%" height="75px">
+								</div>
+							</div>
+							<div class="col-sm-4 col-xs-4">
+								<div class="col-sm-12" onclick="bank(this)">
+									<img src="image/bank/sacombank.png" width="100%" height="75px">
+								</div>
+							</div>
+							<div class="col-sm-4 col-xs-4">
+								<div class="col-sm-12" onclick="bank(this)">
+									<img src="image/bank/bidv.png" width="100%" height="75px">
+								</div>
+							</div>
+						</div>
+						<div class="row" style="border: 2px dotted;margin-top: 20px;">
+							<div class="col-sm-6">
+								<div class="form-group">
+								  <label for="usr">Tên chủ thẻ:</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+								  <label for="usr">Mã thẻ:</label>
+								  <input type="text" class="form-control" id="usr">
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="form-group">
+								  <label for="usr">Ngày hết hạn:</label>
+								  <input type="date" class="form-control" id="usr">
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="form-group">
+								  <label for="usr">CCV/CVV:</label>
+								  <input type="password" class="form-control" id="usr">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<p style="margin-top: 28px;">*CVV hoặc CCV là mã bảo mật thẻ, số có ba chữ số duy nhất ở mặt sau thẻ của bạn tách biệt với số của nó</p>
+							</div>
+						</div>
+						<p style="margin-top: 20px;font-size: 20px;"><strong style="color: blue;">Số tiền phải thanh toán: </strong>2,000,000 VNĐ</p>
+						<center><button type="submit" class="btn btn-primary" onclick="click2()"><i class="fas fa-file-upload"></i> <span>THANH TOÁN</span></button></center>
+					</div>
+				</div>
+				<div class="Complete" id="Complete" style="display: none;">
+					<div class="load" align="center">
+						<img src="image/bank/load.gif">
+						<h2 align="center" style="color: blue">ĐANG XỬ LÝ</h2>
+					</div>
+					<div class="container load1" align="center">
+						<img src="image/bank/tick.gif" width="100px;" style="margin-top: 150px;">
+						<p style="color: blue;margin-top: 10px;font-size: 20px;"><strong>Xong</strong></p>
+						<a href="index.html">Quay về trang chủ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

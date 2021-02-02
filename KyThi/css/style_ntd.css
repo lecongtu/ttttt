@@ -1,0 +1,157 @@
+
+body{
+	background: #005689;
+	font-family: 'Times New Roman', serif;
+}
+.menu_top{
+	height: 100px;
+}
+.menu_top #img{
+	margin-top: 20px;
+}
+.menu_top .right button{
+	outline: none;
+	color: white;
+}
+.menu_top .right{
+	position: absolute;
+	top: 5%;right: 9%;
+}
+.main_left{
+	width: 22%;
+	background:  #0277bd;
+	float: left;
+	margin-right: 32px;
+}
+.left_bot{
+	background: white;
+	height: 250px;
+}
+.left_bot ul{
+	list-style: none;
+	padding: 0px;
+	margin-left: 15px;
+}
+.left_bot a{
+	text-decoration: none;
+  color: black;
+}
+.left_bot ul li i{
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+.main_right,.Payment,.Complete{
+	width: 75%;
+	background: white;
+	float: left;
+}
+.main_right{
+	padding-bottom: 12px;
+}
+.main_right strong{
+	font-size: 15px;
+}
+.main_right .col-sm-6 .col-sm-12 label,.main_right .col-sm-4 .col-sm-12 label{
+  color: blue;
+  font-weight: bold;
+}
+
+.Payment{
+	height: 530px;
+}
+.Complete{
+	height: 530px;
+  overflow: hidden;
+}
+
+.Payment .col-sm-12{
+	background: yellow;
+	height: 150px;
+}
+.Payment img{
+	margin-top: 30px;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.dd{
+	position: relative;
+	width: 180px;
+}
+ 
+.dd:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.lk{
+	margin-top: 20px;
+	padding-bottom: 20px;
+}
+.lk span {
+	padding:5px;
+	font-size: 20px;
+	color: white;
+}
+.btn-colorgb-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 40px;
+    color: #FFF !important;
+    text-align: center;
+    z-index: 99999999 !important;
+}
+.btn-colorgb-float span:after {
+    content: ' ';
+    border: 10px solid transparent;
+    position: absolute;
+    border-top-color: #000;
+    margin: auto;
+    left: 38px;
+    bottom: -18px;
+}
+.btn-colorgb-float span {
+    position: absolute;
+    color: #fff;
+    font-size: 10px;
+    width: 100px;
+    left: -20px;
+    margin: auto;
+    background: #000;
+    padding: 7px;
+    top: -35px;
+    text-align: center;
+    line-height: 1;
+}
+
+#main_right, #Payment, #Complete{
+	-webkit-animation:slide 10s ease-out;
+	-moz-animation:slide 10s ease-out;
+	-webkit-animation:slide 5s ease-in;
+	-moz-animation:slide 5s ease-in;
+}
+@-webkit-keyframes slide{
+	0% {opacity: 0;}
+	20% {opacity: 1;}
+}

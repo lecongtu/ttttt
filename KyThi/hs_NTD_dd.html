@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" type="text/css" href="css/style_ntd.css">
+	<style type="text/css">
+		#title {
+			margin-top: 25px;
+		}
+		#title #sort{
+			cursor: pointer;
+			text-align: center;
+		}
+		#title #sort:hover{
+			background: #E6E6FA;
+		}
+		#title #sort1{
+			cursor: pointer;
+			text-align: center;
+			display: none;
+		}
+		#title #sort1:hover{
+			background: #E6E6FA;
+		}
+		.pagination li{
+			padding: 0px 5px 0px 5px; 
+		}
+		.pagination li a{
+			color: black;
+		}
+		#tb1{
+			display: block;
+		}
+		#tb1{
+			display: none;
+		}
+
+
+	</style>
+	<script type="text/javascript" language="script">
+		function click1(type,element){
+			element.style.background = '#E6E6FA';
+			element.style.color='#000000';
+		}
+
+		function sort(){
+			document.getElementById('tb').style.display='none';
+			document.getElementById('tb1').style.display='block';
+			document.getElementById('sort').style.display='none';
+			document.getElementById('sort1').style.display='block';
+		}
+		function sort1(){
+			document.getElementById('tb').style.display='block';
+			document.getElementById('tb1').style.display='none';
+			document.getElementById('sort1').style.display='none';
+			document.getElementById('sort').style.display='block';
+		}
+		function check() {
+		  	let chk = document.getElementsByClassName('myCheck');
+			if(document.getElementById('Check').checked==true){
+				for(i=0;i<chk.length;i++){
+			  		chk[i].checked = true;
+			  	}
+			}else{
+				for(i=0;i<chk.length;i++){
+			  		chk[i].checked = false;
+			  	}
+			}
+		}
+	</script>
+</head>
+<body>
+	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+		<div class="elfsight-app-cd08d4dd-0176-459d-8e6d-6ff1e25cb942"></div>
+	<!-- <a data-caption="Hồ sơ xin việc của bạn trong mắt nhà tuyển dụng" data-fancybox="" data-type="iframe" title="Hồ sơ xin việc của bạn trong mắt nhà tuyển dụng" class="btn-colorgb-float"> <i class="icon-vcard icon-float"></i> <span>Liên hệ với admin</span><img src="https://jobsgo.vn/img/fb_chat_icon.png" alt="Chat"></a> -->
+	<div class="container">
+		<div class="menu_top">
+			<a href="index.html"><img src="image/logo.png" width="120px;" id="img"></a>
+			<div align="right" class="right">
+				<div class="dropdown">
+				    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+				      <img src="image/goiy/3.jpg" width="40">Công ty
+				    </button>
+				    <div class="dropdown-menu">
+				      	<a class="dropdown-item" href="#"><i class="fas fa-eye"></i> Xem cv</a>
+				      	<a class="dropdown-item" href="#"><i class="fas fa-lock"></i> Đổi mật khẩu</a>
+				      	<div class="dropdown-divider"></div>
+				      	<a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="container">
+				<div class="main_left">
+					<div class="left_top">
+						<center><div>
+							<center class="dd">
+								<img src="image/daidien.jpg" style="margin-top: 30px;border: 5px solid white;display: block;width: 180px;" id="hv">
+								<div class="overlay">
+									<div class="text"><i class="fas fa-plus" style="color: #7FFF00;font-size: 40px;"></i></div>
+								</div>
+							</center>
+							<div class="lk">
+								<center>
+									<span><i class="fab fa-facebook-f"></i></span>
+									<span><i class="fab fa-google-plus-g"></i></span>
+									<span><i class="fab fa-twitter"></i></span>
+									<span><i class="fab fa-linkedin-in"></i></span>
+									<span><i class="fab fa-skype"></i></span>
+								</center>
+							</div>
+						</div></center>
+					</div>
+					<div class="left_bot">
+						<p style="opacity: 0.7;text-indent: 14px;">cá nhân</p>
+						<ul>
+							<a href="hs_NTD_dd.html"><li><i class="fas fa-user-plus"></i>Duyệt danh sách</li></a>
+							<a href="hs_NTD.html"><li><i class="fas fa-paste"></i>Đăng bài viết</li></a>
+							<a href="chart.html"><li><i class="fas fa-chart-bar"></i>Thống kê</li></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="main_right">
+					<div class="container">
+						<div class="row" id="title">
+							<div class="col-sm-6 col-xs-6">
+								<p>Danh sách người xin việc</p>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="col-sm-4" style="position: absolute;right: -2%;">
+									<p id="sort" onclick="sort()"><i class="fas fa-sort-amount-down"></i> Sắp xếp</p>
+									<p id="sort1" onclick="sort1()"><i class="fas fa-sort-amount-down-alt"></i> Sắp xếp</p>
+								</div>
+							</div>
+						</div>
+						<div id="tb">
+							<table class="table table-striped">
+							    <thead>
+							      <tr>
+							      	<th>
+							      		<input type="checkbox" id="Check" onclick="check()">
+							      	</th>
+							        <th>Họ và Tên</th>
+							        <th>Ngày sinh</th>
+							        <th>Email</th>
+							        <th>Bằng cấp</th>
+							        <th>Kinh nghiệm</th>
+							        <th></th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>Lê Công Tú</td>
+							        <td>Doe</td>
+							        <td>john@example.com</td>
+							        <td>Đại hock</td>
+							        <td id="nam">7 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('1',this)">Duyệt</button></td>
+							      </tr>
+							      <tr >
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>Mary</td>
+							        <td>Moe</td>
+							        <td>mary@example.com</td>
+							        <td>Đại hock</td>
+							        <td>4 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('2',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>July</td>
+							        <td>Dooley</td>
+							        <td>july@example.com</td>
+							        <td>Đại hock</td>
+							        <td>3 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('3',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>Lê Công Tú</td>
+							        <td>Doe</td>
+							        <td>john@example.com</td>
+							        <td>Đại hock</td>
+							        <td>1 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('4',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>Mary</td>
+							        <td>Moe</td>
+							        <td>mary@example.com</td>
+							        <td>Đại hock</td>
+							        <td>5 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('5',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>July</td>
+							        <td>Dooley</td>
+							        <td>july@example.com</td>
+							        <td>Đại hock</td>
+							        <td>1 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('6',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>Lê Công Tú</td>
+							        <td>Doe</td>
+							        <td>john@example.com</td>
+							        <td>Đại hock</td>
+							        <td>4 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('7',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>Mary</td>
+							        <td>Moe</td>
+							        <td>mary@example.com</td>
+							        <td>Đại hock</td>
+							        <td>3 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('8',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>July</td>
+							        <td>Dooley</td>
+							        <td>july@example.com</td>
+							        <td>Đại hock</td>
+							        <td>3 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('9',this)">Duyệt</button></td>
+							      </tr>
+							    </tbody>
+							  </table>
+						</div>
+						<div id="tb1">
+							<table class="table table-striped">
+							    <thead>
+							      <tr>
+							      	<th>
+							      		<input type="checkbox" id="Check" onclick="check()">
+							      	</th>
+							        <th>Họ và Tên</th>
+							        <th>Ngày sinh</th>
+							        <th>Email</th>
+							        <th>Bằng cấp</th>
+							        <th>Kinh nghiệm</th>
+							        <th></th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>Lê Công Tú</td>
+							        <td>Doe</td>
+							        <td>john@example.com</td>
+							        <td>Đại hock</td>
+							        <td>7 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('1',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>Mary</td>
+							        <td>Moe</td>
+							        <td>mary@example.com</td>
+							        <td>Đại hock</td>
+							        <td>5 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('5',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>Lê Công Tú</td>
+							        <td>Doe</td>
+							        <td>john@example.com</td>
+							        <td>Đại hock</td>
+							        <td>4 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('7',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>Mary</td>
+							        <td>Moe</td>
+							        <td>mary@example.com</td>
+							        <td>Đại hock</td>
+							        <td>4 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('2',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>July</td>
+							        <td>Dooley</td>
+							        <td>july@example.com</td>
+							        <td>Đại hock</td>
+							        <td>3 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('3',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>Mary</td>
+							        <td>Moe</td>
+							        <td>mary@example.com</td>
+							        <td>Đại hock</td>
+							        <td>3 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('8',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>July</td>
+							        <td>Dooley</td>
+							        <td>july@example.com</td>
+							        <td>Đại hock</td>
+							        <td>3 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('9',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>
+							        <td>Lê Công Tú</td>
+							        <td>Doe</td>
+							        <td>john@example.com</td>
+							        <td>Đại hock</td>
+							        <td>1 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('4',this)">Duyệt</button></td>
+							      </tr>
+							      <tr>
+							      	<td><input type="checkbox" class="myCheck"></td>	
+							        <td>July</td>
+							        <td>Dooley</td>
+							        <td>july@example.com</td>
+							        <td>Đại hock</td>
+							        <td>1 năm</td>
+							        <td><button type="button" class="btn btn-success" id="tt" onclick="click1('6',this)">Duyệt</button></td>
+							      </tr>
+							    </tbody>
+							  </table>
+						</div>
+						  <div>
+						  	<nav aria-label="Page navigation example" style="margin-left: 33%;">
+							  <ul class="pagination">
+							    <li class="page-item">
+							      <a class="page-link" href="#" aria-label="Previous">
+							        <span aria-hidden="true">&laquo;</span>
+							        <span class="sr-only">Previous</span>
+							      </a>
+							    </li>
+							    <li class="page-item"><a class="page-link" href="#">1</a></li>
+							    <li class="page-item"><a class="page-link" href="#">2</a></li>
+							    <li class="page-item"><a class="page-link" href="#">3</a></li>
+							    <li class="page-item"><a class="page-link" href="#">4</a></li>
+							    <li class="page-item"><a class="page-link" href="#">5</a></li>
+							    <li class="page-item">
+							      <a class="page-link" href="#" aria-label="Next">
+							        <span aria-hidden="true">&raquo;</span>
+							        <span class="sr-only">Next</span>
+							      </a>
+							    </li>
+							  </ul>
+							</nav>
+						  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

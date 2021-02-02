@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<script type="text/javascript" src="js/script.js"></script>
+  	<link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+	<script src="owlcarousel/owl.carousel.min.js"></script>
+	<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  	<style type="text/css">
+  		#work,#tp{
+  			outline: none;
+  			width: 200px;
+  			padding:10px;
+  		}
+  		#work option,#tp option{
+  			background: #f5f5f5;
+  		}
+  		.col-sm-12{
+  			border: 2.5px solid rgba(0, 0, 0, 0.2);
+  			border-radius: 7px;
+  			margin-top: 13px;
+  		}
+  		.work{
+  			margin-top: 10px;
+  		}
+  		.middle {
+		  opacity: 0;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-55%, -60%);
+		  -ms-transform: translate(-50%, -50%);
+		  transition: .1s ease;
+		  text-align: center;
+
+		}
+		.img-rounded{
+			transition: .5s ease;
+		}
+		.col-sm-2.col-xs-4:hover .img-rounded{
+			opacity: 0.5;
+		}
+		.col-sm-2.col-xs-4:hover .middle{
+			opacity: 1;
+		}
+
+		.text {
+		  background-color: #4CAF50;
+		  color: white;
+		  font-size: 13px;
+		  padding: 1px;
+		}
+		.comment .item img{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+		.comment .item .cm1{
+			border: 2px solid rgba(0, 0, 0, 0.1);
+			margin-top: -50px;
+			height: 300px;
+
+		}
+		.comment .item .cm1 p{
+			padding-top: 70px;
+		}
+		.comment .item .cm1 h3{
+			padding-bottom: 20px;
+		}
+		.row .col-sm-12{
+			overflow: hidden;
+		}
+		.col-sm-12 .tg-themetag .hot {
+    		background: #ff2929;
+		}
+		.col-sm-12 .tg-themetag {
+		    background: #ff2929;
+		    right: -20px;
+		    left: initial;
+		    top: 12px;
+		    width: 90px;
+		    text-align: center;
+		    transform: rotate(45deg);
+		    -webkit-transform: rotate(45deg);
+		    -moz-transform: rotate(45deg);
+		    -ms-transform: rotate(45deg);
+		    -o-transform: rotate(45deg);
+		    font-size: 9px;
+		}
+		.tg-themetag {
+		    top: 7px;
+		    left: -5px;
+		    z-index: 2;
+		    color: #fff;
+		    font-size: 10px;
+		    font-weight: 500;
+		    line-height: 10px;
+		    position: absolute;
+		    background: #ff526c;
+		    padding: 5px 3px 3px 10px;
+		    text-transform: uppercase;
+		}
+  	</style>
+  	<script type="text/javascript">
+  		$(document).ready(function() {
+  			var owl = $('.banner');
+			owl.owlCarousel({
+			    items:1,
+			    loop:true,
+			    margin:10,
+			    autoplay:true,
+			    autoplayTimeout:2000,
+			    autoplayHoverPause:true
+			});
+  		});
+	  	$(document).ready(function() {
+	  		var owl = $('.t1');
+			owl.owlCarousel({
+			    items:3,
+			    loop:true,
+			    margin:10,
+			    autoplay:true,
+			    autoplayTimeout:1000,
+			    autoplayHoverPause:true
+			});
+			$('.play').on('click',function(){
+			    owl.trigger('play.owl.autoplay',[1000])
+			})
+			$('.stop').on('click',function(){
+			    owl.trigger('stop.owl.autoplay')
+			})
+	  	});
+  	</script>
+</head>
+<body style="background: #f5f5f5;">
+	<div id="menu-top">
+		<nav class="navbar" style="background: #00c5f8;">
+		  <div class="container">
+		    <div class="navbar-header">
+		    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu" id="button1">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+    			</button>
+		      <a href="index.html"><img src="image/logo.png" width="120px;" height="50px;"></a>
+		    </div>
+			<div class="collapse navbar-collapse" id="main-menu">
+				<ul class="nav navbar-nav navbar-right" id="menu">
+			      	<li><a href="index.html">Trang Chủ</a></li>
+			      	<li><a href="tracuuluong.html">Tra cứu lương</a></li>
+			      	<li id="dropdown1">
+			      		<a class="dropdown" data-toggle="dropdown" href="#">Việc làm<span class="caret"></span></a>
+			      		<ul class="dropdown-menu" id="dropdown-menu">
+			      			<li><a href="vieclamQL.html">Việc làm quản lý</a></li>
+			      			<li><a href="vieclamQL.html">Việc làm chuyên môn</a></li>
+			      			<li><a href="vieclamQL.html">Việc làm lao động phổ thông</a></li>
+			      		</ul>
+			      	</li>
+			      	<li><a href="NhaTuyenDung.html">Nhà tuyển dụng</a></li>
+			      	<li style="background-color: #459de6;">
+			      		<a href="Login.html"><span style="font-size: 130%"><i class="fas fa-user"></i></span> Hồ sơ của tôi</a>
+			      	</li>
+			    </ul>
+			</div>
+		  </div>
+		</nav>
+	</div>
+	<div id="banner" style="margin-top: -10px;">
+		<img src="image/banner.png" width="100%">
+	</div>
+	<div id="search" style="padding: 20px;background-color: rgba(20,32,25,0.65);position: absolute;top: 68%;left:5%;">
+		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+		<div class="elfsight-app-cd08d4dd-0176-459d-8e6d-6ff1e25cb942"></div>
+		<div class="container" style="margin-top: 0px;background: white;">
+				<form>
+					<table width="93%" style="height: 50px;">
+						<tr>
+							<td width="50%">
+								<input type="text" list="browsers" name="" placeholder="Nhập tiêu đề,công ty,địa điểm" style="width: 100%; height: 100%;border:0;outline: none;">
+								<datalist id="browsers">
+								  <option value="it">
+								  <option value="Ngân hàng">
+								  <option value="Sales">
+								  <option value="Digital marketing">
+								  <option value="java">
+								  <option value="Front-end">
+								  <option value="Back-end">
+								</datalist>
+							</td>
+							<td class="dropdown">
+								<span><i class="fas fa-bars" style="font-size: 140%;"></i></span>
+								<select id="work">
+									<option>Tất cả ngành nghề</option>
+									<option>Nhân viên kinh doanh</option>
+									<option>Bán hàng</option>
+									<option>Tư vấn</option>
+									<option>Kỹ thuật</option>
+								</select>
+							</td>
+							<td>
+								<span><i class="fas fa-map-marker-alt" style="font-size: 140%"></i></span>
+								<select id="tp">
+									<option>Tất cả tỉnh thành</option>
+									<option>Hà Nội</option>
+									<option>Đà Nẵng</option>
+									<option>TP Hồ Chí Minh</option>
+								</select>
+							</td>
+							<td>
+								<button type="submit" class="btn btn-info" style="margin-right: -100px;">Tìm kiếm</button>
+							</td>
+						</tr>
+					</table>
+				</form>
+		</div>
+	</div>
+	<div id="content3" style="margin-top: 70px;background:white;">
+		<div class="container">
+			<center><h1 style="font-weight: bold;">Nhà tuyển dụng hàng đầu</h1></center>
+			<div class="row">
+				<div class="col-sm-2 col-xs-4">
+					<img src="image/tuyendung/1.png" class="img-rounded" style="width: 150px;height: 150px;border: 1px solid;" class="image"><br>
+					<center><a href="#"><h5>VIFON</h5></a></center>
+					<div class="middle">
+					    <div class="text"><a href="lt_net.html"><button type="button" class="btn btn-primary">Ứng tuyển</button></a></div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-4">
+					<img src="image/tuyendung/2.png" class="img-rounded" style="width: 150px;height: 150px;border: 1px solid;"><br>
+					<center><a href="#"><h5>CENGROUP</h5></a></center>
+					<div class="middle">
+					    <div class="text"><a href="lt_net.html"><button type="button" class="btn btn-primary">Ứng tuyển</button></a></div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-4">
+					<img src="image/tuyendung/3.png" class="img-rounded" style="width: 150px;height: 150px;border: 1px solid;"><br>
+					<center><a href="#"><h5>TH TRUE MILK</h5></a></center>
+					<div class="middle">
+					    <div class="text"><a href="lt_net.html"><button type="button" class="btn btn-primary">Ứng tuyển</button></a></div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-4">
+					<img src="image/tuyendung/4.jpg" class="img-rounded" style="width: 150px;height: 150px;border: 1px solid;"><br>
+					<center><a href="#"><h5>Ngân hàng TMCP hàng hải Việt Nam</h5></a></center>
+					<div class="middle">
+					    <div class="text"><a href="lt_net.html"><button type="button" class="btn btn-primary">Ứng tuyển</button></a></div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-4">
+					<img src="image/tuyendung/5.png" class="img-rounded" style="width: 150px;height: 150px;border: 1px solid;"><br>
+					<center><a href="#"><h5>Địa ốc Kim Oanh</h5></a></center>
+					<div class="middle">
+					    <div class="text"><a href="lt_net.html"><button type="button" class="btn btn-primary">Ứng tuyển</button></a></div>
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-4">
+					<img src="image/tuyendung/6.jpg" class="img-rounded" style="width: 150px;height: 150px;border: 1px solid;"><br>
+					<center><a href="#"><h5>J&T Express</h5></a></center>
+					<div class="middle">
+					    <div class="text"><a href="lt_net.html"><button type="button" class="btn btn-primary">Ứng tuyển</button></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content" style="margin-top: 40px;">
+		<div class="container">
+			<div>
+				<p align="center" style="font-size:20px;margin-top: 20px;">Việc làm theo ngành nghề</p>
+				<h2 align="center">Ngành nghề<span style="color: #1772bd;font-weight: bold;"> Tuyển dụng</span></h2>
+				<div id="khoiNghe">
+					<div class="row r1 one" id="row">
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="far fa-building" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Kinh doanh/bán hàng</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fas fa-user-edit" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Nhân sự/hành chính</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fal fa-book" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Luật/Pháp chế</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fas fa-wallet" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Kế toán/Kiểm toán</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fas fa-laptop" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Công nghệ thông tin</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fas fa-university" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Tài chính/Ngân hàng</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fas fa-pencil-ruler" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Thiết kế</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fas fa-map-marked-alt" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Giao thông/Vận tải</span></center>
+						</div>
+					</div>
+					<div class="row r1">
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="far fa-building" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Kinh doanh/bán hàng</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fas fa-user-edit" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Nhân sự/hành chính</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fal fa-book" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Luật/Pháp chế</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fas fa-wallet" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Kế toán/Kiểm toán</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fas fa-laptop" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Công nghệ thông tin</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fas fa-university" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Tài chính/Ngân hàng</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fas fa-pencil-ruler" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Thiết kế</span></center>
+						</div>
+						<div class="col-sm-3 col-xs-6" style="height: 100px;">
+							<center><span><i class="fas fa-map-marked-alt" style="font-size: 300%;color: blue;margin-top: 30px;"></i><br>Giao thông/Vận tải</span></center>
+						</div>
+					</div>
+				</div>
+				<div class="nut-Nghe">
+					<ul>
+						<li class="active_nut"></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content1" style="margin-top: 40px;height: 670px;background:white;">
+		<div class="container">
+			<h2 align="center" style="margin-top: 50px;margin-left: 30px;"><strong>Việc làm<span style="color: #1772bd"> tốt nhất</span></strong></h2>
+			<div id="khoiCty">
+				<div class="row r2 two" id="cty">
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12" style="overflow: hidden;">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/2.png" style="width: 80px;height: 50px;">
+									<h4>(Associate) Operational Risk Management M...</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/3.png" style="width: 80px;height: 50px;">
+									<h4>(Associate) Operational Risk Management M...</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/4.png" style="width: 80px;height: 50px;">
+									<h4>(Associate) Operational Risk Management M...</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/5.png" style="width: 80px;height: 50px;">
+									<h4>(Associate) Operational Risk Management M...</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/6.png" style="width: 80px;height: 50px;">
+									<h4>(Associate) Operational Risk Management M...</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/1.jpg" style="width: 80px;height: 50px;">
+									<h4>(Associate) Operational Risk Management M...</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/1.jpg" style="width: 80px;height: 50px;">
+									<h4>(Associate) Operational Risk Management M...</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="row r2" id="cty">
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="row r2" id="cty">
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="lt_net.html">
+						<div class="col-sm-6 col-xs-6">
+							<div class="col-sm-12">
+								<div class="work">
+									<img src="image/job/tiki.png" style="width: 80px; height: 50px;">
+									<h4>(Associate) Operational Risk Management M...1</h4>
+									<p>Tiki Corporation - Hồ Chí Minh</p>
+									<span class="tg-themetag hot">HOT</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="nut-cty">
+					<ul>
+						<li class="active_nut1"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="comment">
+		<div class="container" style="margin-top: 30px">
+			<center><h1><strong>Các bài <span style="color: #1772bd">Đánh giá</span></strong></h1></center>
+			<div class="owl-carousel t1" style="margin-top: 20px;">
+				<div>
+					<div class="item">
+				    	<center>
+				    		<img src="image/comment/1.jpg">
+				    		<div class="cm1" style="background: #f5f5f5;">
+				    			<p> “Web khá mới lạ, việc nộp đơn và quá trình ứng tuyển nhanh chóng hơn quá trình tìm việc thông thường. Gây ấn tượng và chinh phục nhà tuyển dụng ngay từ ban đầu với mẫu CV khác biệt, chuyên nghiệp.” </p>
+				    			<h3><strong>Dương Vân Anh</strong></h3>
+				    			<span style="color: #FF9900;"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+				    		</div>
+				    	</center>
+				    </div>
+				</div>
+			    <div class="item">
+			    	<div class="item">
+				    	<center>
+				    		<img src="image/comment/3.jpg">
+				    		<div class="cm1" style="background: #f5f5f5;">
+				    			<p>  “Sjob giúp tôi tiết kiệm thời gian tìm việc, tạo CV một cách dễ dàng, tiếp cận doanh nghiệp nhanh chóng. Nhờ có Sjob tôi tự tin tìm được việc như ý với mức lương mong muốn. Cảm ơn Sjob!” </p>
+				    			<h3><strong>Trần Huyền</strong></h3>
+				    			<span style="color: #FF9900"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+				    		</div>
+				    	</center>
+				    </div>
+			    </div>
+			    <div class="item">
+			    	<div class="item">
+				    	<center>
+				    		<img src="image/comment/4.jpg">
+				    		<div class="cm1" style="background: #f5f5f5;">
+				    			<p>  “Ứng dụng giúp tìm kiếm công việc theo vị trí người tìm việc. Điều đó giúp người dùng tìm được các công việc gần chỗ ở, tiện đi lại, giảm bớt được nhiều chi phí và có thể check thông tin bất cứ lúc nào!” </p>
+				    			<h3><strong>Nguyễn Xuân Việt</strong></h3>
+				    			<span style="color: #FF9900"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+				    		</div>
+				    	</center>
+				    </div>
+			    </div>
+			    <div class="item">
+			    	<div class="item">
+				    	<center>
+				    		<img src="image/comment/2.jpg">
+				    		<div class="cm1" style="background: #f5f5f5;">
+				    			<p>  “Sjob giúp tôi tiết kiệm thời gian tìm việc, tạo CV một cách dễ dàng, tiếp cận doanh nghiệp nhanh chóng. Nhờ có Sjob tôi tự tin tìm được việc như ý với mức lương mong muốn. Cảm ơn Sjob!”  </p>
+				    			<h3><strong>Lê Anh Tuấn</strong></h3>
+				    			<span style="color: #FF9900"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+				    		</div>
+				    	</center>
+				    </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" style="background-color: #00c5f8; color: black" style="width: 100%;" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img src="image/logo.png" style="width: 100px"><br>
+					<h4>Thông Tin</h4>
+					<ul class="list-unstyled">
+						<li><a href="#">Giới thiệu về Sjob</a></li>
+						<li><a href="#">Tuyển dụng</a></li>
+						<li>.</li>
+						<li><a href="#">Quy chế hoạt động</a></li>
+						<li><a href="#">Điều khoản</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="left-aligned">
+	                    <div class="left-aligned">
+	                        <br>
+	                        <h5 class="boxed-content-title">0356613376</h5>
+	                    </div>
+	                    <br>
+	                    <h5>CSKH</h5>
+	                    <p style="margin-bottom: 0;">
+	                        <a href="#">Than phiền/Chăm sóc khách hàng</a>
+	                    </p>
+                	</div><br>
+                	<h4>FAQ</h4>
+					<ul class="list-unstyled">
+	                    <li><a href="#">Chính sách</a></li>
+	                    <li><a href="#">Chính sách bảo hành</a></li>
+	                    <li><a href="#">Khách hàng VIP</a></li>
+	                    <li><a href="#">Đối tác cung cấp</a></li>
+                	</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="row">
+						<div class="col-12">
+	                        <br>
+	                        <p>Hệ thống Công ty</p>
+                    	</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-10  col-xs-12">
+			        <hr style="margin: 10px 0;">
+			        <p style="margin-bottom: 0;">© 2020 - CÔNG TY TNHH Sjob VN</p>
+			        <p style="margin-bottom: 0; font-size: 9px;">Giấy CNĐKDN: 0310874914 – Ngày cấp: 25/11/2011 - Cơ quan cấp: Phòng Đăng Ký Kinh Doanh – Sở Kế Hoạch và Đầu Tư TP.ĐN</p>
+			        <p style="margin-bottom: 0; font-size: 9px;">Địa chỉ đăng ký : 766/3B-3C Sư Vạn Hạnh (Nối dài), Phường 12, Quận 10, TP.HCM - Điện thoại: 028 3868 4857 - Email: LECONGTU9337@GMAIL.COM</p>
+			    </div>
+			    <div class="col-sm-2 col-xs-12">
+			        <a href="#" target="_blank">
+			            <img src="image/dathongbao.png" alt="" style="width: 100%; max-width:200px; margin-top:10px;">
+			        </a>
+			    </div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
